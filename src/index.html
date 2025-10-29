@@ -59,7 +59,6 @@
             color: #fff;
             border-color: #777;
         }
-        /* Different colors for each button in the popup */
         .popup button {
             margin: 10px 5px;
             padding: 12px 25px;
@@ -233,6 +232,7 @@
         <tetapux-ads></tetapux-ads>
         <div class="the-banners-happies">
             <img class="image-happy-now" width="88px" height="31px" src="/e/happygif.gif">
+            <img class="image-happy-now" width="88px" height="31px" src="/e/happiesbanner.png">
         </div>
     </center>
     <div class="overlay" id="overlay"></div>
@@ -306,9 +306,7 @@
                 if (ads) {
                     ads.classList.add('shake', 'flip', 'glow', 'skew', 'spin', 'colorchange');
                 }
-                // Apply extra animations to the entire body for even more flair.
                 document.body.classList.add('rotate', 'vibrate', 'skew', 'spin');
-                // Ensure full body size with no width limitation.
                 document.body.style.overflow = "visible";
             }
             setTimeout(showPopup, Math.random() * 1750 + 2000);
